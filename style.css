@@ -12,7 +12,8 @@
     padding: 0;
     margin: 0;
 }
-    
+
+/* ========== Header ========== */
 .fylo-nav {
     display: flex;
     justify-content: space-between;
@@ -93,6 +94,7 @@ input[type=email] {
 }
 
 .get-started a {
+    display: block;
     width: 80%;
     padding: 0.5rem;
     background-color: var(--Bright-Blue);
@@ -106,6 +108,7 @@ input[type=email] {
 
 
 @media only screen and (min-width: 385px) {
+    /* ========== Header ========== */
     .hero-text h2 {
         font-family: 'Raleway', sans-serif;
         color: var(--Very-Dark-Blue);
@@ -115,6 +118,7 @@ input[type=email] {
 }
 
 @media only screen and (min-width: 480px) {
+    /* ========== Header ========== */
     .fylo-nav img {
         max-width: 20%;
         margin-left: 1.6rem;
@@ -143,6 +147,7 @@ input[type=email] {
 }
 
 @media only screen and (min-width: 600px) {
+    /* ========== Header ========== */
     .fylo-nav img {
         max-width: 15%;
         margin-left: 1.6rem;
@@ -163,6 +168,7 @@ input[type=email] {
 }
 
 @media only screen and (min-width: 801px) {
+    /* ========== Header ========== */
     .fylo-nav img {
         max-width: 12%;
         margin-left: 1.6rem;
@@ -176,12 +182,14 @@ input[type=email] {
 }
 
 @media only screen and (min-width: 1025px) {
+    /* ========== Header ========== */
     .fylo-hero {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         margin: 0;
         padding: 1rem;
+        margin-top: 2.5rem;
     }
 
     .fylo-nav img {
@@ -191,20 +199,20 @@ input[type=email] {
 
     .hero-text {
         text-align: start;
-        margin-top: 3.1rem;
+        margin-top: 0rem;
         padding: 1rem;
     }
 
-      .hero-text h2 {
-        font-family: 'Raleway', sans-serif;
-        color: var(--Very-Dark-Blue);
-        max-width: 90%;
-        font-size: 1.6rem;
-        font-weight: 700;
-        padding-left: 1rem;
+    .hero-text h2 {
+      font-family: 'Raleway', sans-serif;
+      color: var(--Very-Dark-Blue);
+      max-width: 90%;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding-left: 1rem;
     }
 
-      .hero-text p {
+    .hero-text p {
         font-family: 'Open Sans', sans-serif;
         color: var(--Very-Dark-Blue);
         max-width: 100%;
@@ -212,10 +220,45 @@ input[type=email] {
         padding-left: 1rem;
     }
 
-      .hero-image img {
+    .hero-image img {
         display: block;
         margin: 0 auto;
-        max-width: 85%;
+        max-width: 90%;
+    }
+
+    .hero-email {
+        display: flex;
+        gap: 0rem;
+        margin-top: -4rem;
+    }
+
+    .textarea {
+        margin-left: 1.1rem;
+    }
+
+    input[type="email"] {
+        max-width: 100%;
+        padding: 0.6rem 4rem;
+        border: 1px solid var(--Very-Dark-Blue);
+        border-radius: 4px;
+    }
+
+    .get-started {
+        display: block;
+        margin-top: 0rem;
+    }
+
+    .get-started a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 2rem;
+        background-color: var(--Bright-Blue);
+        text-decoration: none;
+        color: #fff;
+        border-radius: 4px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 0.9rem;
     }
 
 }
