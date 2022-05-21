@@ -8,30 +8,27 @@
 }
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-.fylo-container {
-    font-family: 'Open Sans', sans-serif;
-}
-
+    
 .fylo-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.9rem;
 }
 
 .fylo-nav img {
-    width: 25%;
-    margin-left: 25px;
+    max-width: 25%;
+    margin-left: 1.6rem;
 }
 
 .nav-login {
     display: flex;
-    gap: 20px;
-    margin-right: 20px;
+    gap: 0.6rem;
+    margin-right: 1.25rem;
 }
 
 .nav-login a {
@@ -39,73 +36,189 @@
     color: var(--Desaturated-Blue);
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 .fylo-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
+    margin-top: 7rem;
 }
 
 .hero-image img {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    max-width: 90%;
 }
 
 .hero-text {
     text-align: center;
-    margin-top: 50px;
-    width: 330px;
+    margin-top: 3.1rem;
+    padding: 1rem;
 }
 
 .hero-text h2 {
     font-family: 'Raleway', sans-serif;
     color: var(--Very-Dark-Blue);
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 .hero-text p {
+    font-family: 'Open Sans', sans-serif;
     color: var(--Very-Dark-Blue);
-    margin-top: 30px;
-    font-size: 15px;
+    margin-top: 1.8rem;
 }
 
 .hero-email {
-    margin-top: 30px;
+    margin-top: 1rem;
 }
 
-textarea {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    border-radius: 5px;
-    border-color: var(--Desaturated-Blue)
+.textarea {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+input[type=email] {
+    width: 80%;
+    padding: 0.8rem;
+    border: 1px solid var(--Very-Dark-Blue);
+    border-radius: 4px;
 }
 
 .get-started {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    background-color: var(--Bright-Blue);
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 1rem;
 }
 
 .get-started a {
+    width: 80%;
+    padding: 0.5rem;
+    background-color: var(--Bright-Blue);
     text-decoration: none;
     color: #fff;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
-.fylo-benefits {
-    margin-top: 250px;
-    background-image: url(./images/bg-curve-mobile.svg);
+
+@media only screen and (min-width: 385px) {
+    .hero-text h2 {
+        font-family: 'Raleway', sans-serif;
+        color: var(--Very-Dark-Blue);
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
 }
 
+@media only screen and (min-width: 480px) {
+    .fylo-nav img {
+        max-width: 20%;
+        margin-left: 1.6rem;
+    }
+
+    .nav-login {
+        display: flex;
+        gap: 1.5rem;
+        margin-right: 1.25rem;
+    }
+
+    .hero-text p {
+        font-family: 'Open Sans', sans-serif;
+        color: var(--Very-Dark-Blue);
+        margin-top: 0rem;
+        padding: 0.8rem;
+    }
+
+    .hero-text h2 {
+        font-family: 'Raleway', sans-serif;
+        color: var(--Very-Dark-Blue);
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .fylo-nav img {
+        max-width: 15%;
+        margin-left: 1.6rem;
+    }
+
+    .hero-image img {
+        display: block;
+        margin: 0 auto;
+        max-width: 75%;
+      }
+
+    .hero-text p {
+        max-width: 80%;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+        color: var(--Very-Dark-Blue);
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .fylo-nav img {
+        max-width: 12%;
+        margin-left: 1.6rem;
+    }
+
+    .hero-image img {
+        display: block;
+        margin: 0 auto;
+        max-width: 65%;
+      }
+}
+
+@media only screen and (min-width: 1025px) {
+    .fylo-hero {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .fylo-nav img {
+        max-width: 12%;
+        padding: 1rem;
+    }
+
+    .hero-text {
+        text-align: start;
+        margin-top: 3.1rem;
+        padding: 1rem;
+    }
+
+      .hero-text h2 {
+        font-family: 'Raleway', sans-serif;
+        color: var(--Very-Dark-Blue);
+        max-width: 90%;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-left: 1rem;
+    }
+
+      .hero-text p {
+        font-family: 'Open Sans', sans-serif;
+        color: var(--Very-Dark-Blue);
+        max-width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+      .hero-image img {
+        display: block;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+}
 
 
 
