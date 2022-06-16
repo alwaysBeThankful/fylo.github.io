@@ -67,6 +67,7 @@ h2 {
 }
 
 .fylo-photo {
+  display: inline-block;
   max-width: 100%;
 }
 
@@ -104,6 +105,7 @@ HEADER SECTION
 
 .hero-img {
   margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .hero-text {
@@ -127,6 +129,10 @@ HEADER SECTION
 
 .hero-email {
   margin-bottom: 1rem;
+}
+
+.hero-button > button {
+  margin-top: 0;
 }
 
 /* ======
@@ -162,8 +168,8 @@ BENEFITS SECTION
 
 .cta-container {
   display: flex;
-  color: var(--Moderate-Cyan);
   justify-content: center;
+  color: var(--Moderate-Cyan);
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -190,6 +196,8 @@ TESTIMONAL SECTION
   background-color: #fff;
   padding: 1.5rem;
   margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
 }
 
 .avatar-maintext p {
@@ -259,6 +267,11 @@ FOOTER SECTION
   background-color: var(--Very-Dark-Blue);
   padding-top: 3rem;
   padding-left: 2rem;
+}
+
+.footer-phone > img {
+  max-width: 12rem;
+  margin-bottom: 1.3rem;
 }
 
 .footer-information,
@@ -341,21 +354,93 @@ ATTRIBUTION
   color: hsl(228, 45%, 44%);
 }
 
+@media only screen and (min-width: 650px) {
+  /* ======
+  HEADER SECTION
+  ====== */
+
+  .fylo-header {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-btn {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  /* ======
+  FOOTER
+  ====== */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding-left: 3.9rem;
+    padding-bottom: 3.9rem;
+  }
+
+  .footer-phone > img {
+    max-width: 6rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .footer-information {
+    margin-top: 5.5rem;
+  }
+
+  .footer-faq {
+    align-self: end;
+    margin-top: 5.5rem;
+  }
+
+  .social-media {
+    justify-self: start;
+    gap: 0.8rem;
+  }
+}
+
 @media only screen and (min-width: 1119px) {
   .fylo-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 3.5rem;
+    padding: 0rem;
   }
 
+  /* ====== 
+  NAVAGATION 
+  ====== */
+  .fylo-nav {
+    padding: 2rem 3.9rem;
+  }
   .nav-text {
     gap: 2rem;
   }
 
+  /* ======
+  HEADER / HERO
+  ====== */
   .fylo-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding: 0rem 3.9rem;
   }
 
   .hero-text {
@@ -373,11 +458,11 @@ ATTRIBUTION
     width: 84%;
     margin-bottom: 1.5rem;
     padding: 0;
-    margin-bottom: 1rem;
+    margin-left: 0;
   }
 
   .hero-img {
-    justify-self: center;
+    justify-self: end;
     margin-bottom: 0;
     grid-column: 2;
   }
@@ -387,13 +472,143 @@ ATTRIBUTION
   }
 
   .hero-btn {
+    max-width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 0.5fr 0.3fr;
     gap: 1rem;
+    margin: 0;
+  }
+
+  .hero-button {
+    margin: 0;
   }
 
   .hero-email {
     margin: 0;
+  }
+
+  .hero-cta {
+    margin: 0;
+  }
+
+  .fylo-email {
+    margin: 0;
+  }
+
+  /* ======
+  BENEFITS SECTION
+  ====== */
+  .mobile-photo {
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3.6rem;
+  }
+  .fylo-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0rem 2.5rem;
+  }
+
+  .benefits-img {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .benefits-text {
+    grid-row: 1;
+  }
+
+  .benefits-text h2 {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  .cta-maintext p {
+    width: 78%;
+  }
+
+  .cta-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .bq-container {
+    margin: 0;
+    max-width: 50%;
+  }
+
+  .avatar-text h2 {
+    font-size: 0.9rem;
+  }
+
+  /* ======
+  EMAIL 
+  ====== */
+  .email-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .email-subscription {
+    align-self: center;
+    text-align: start;
+    margin-top: 0;
+    padding-left: 2rem;
+  }
+
+  .email-subscription h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-section {
+    margin-top: 1.1rem;
+    padding-right: 2rem;
+  }
+
+  .email-form.email—cta {
+    padding-top: 2rem;
+  }
+
+  .email--cta button {
+    width: 200px;
+    margin-right: 20.2rem;
+  }
+
+  .email-text {
+    width: 78%;
+  }
+
+  /* ======
+  FOOTER
+  ====== */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    padding-left: 3.9rem;
+    padding-bottom: 3.9rem;
+  }
+
+  .footer-phone > img {
+    max-width: 167px;
+  }
+
+  .footer-information {
+    margin-top: 5.5rem;
+  }
+
+  .footer-faq {
+    align-self: end;
+    margin-top: 5.5rem;
+  }
+
+  .social-media {
+    justify-self: start;
+    gap: 0.8rem;
   }
 }
