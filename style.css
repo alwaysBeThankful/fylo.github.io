@@ -98,14 +98,14 @@ HEADER SECTION
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 6rem auto;
+  margin: 2rem auto;
+  margin-top: 3rem;
   width: 100%;
   padding: 1.5rem 1.5rem;
 }
 
 .hero-img {
   margin-bottom: 3rem;
-  margin-top: 3rem;
 }
 
 .hero-text {
@@ -347,11 +347,14 @@ SOCIAL MEDIA
 ATTRIBUTION
 ====== */
 .attribution {
-  font-size: 11px;
+  font-size: 0.6rem;
+  color: #fff;
   text-align: center;
+  background-color: var(--Very-Dark-Blue);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: rgb(255, 17, 255);
+  font-size: 0.6rem;
 }
 
 @media only screen and (min-width: 650px) {
@@ -360,13 +363,14 @@ ATTRIBUTION
   ====== */
 
   .fylo-header {
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 
   .hero-img {
     max-width: 70%;
     margin: 0 auto;
     margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 
   .hero-text {
@@ -386,6 +390,20 @@ ATTRIBUTION
     max-width: 80%;
     margin: 0 auto;
   }
+
+  /* ======
+  BENEFITS
+  ====== */
+
+  .mobile-photo {
+    padding: 4rem;
+  }
+
+  .fylo-benefits {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
   /* ======
   FOOTER
   ====== */
@@ -441,6 +459,8 @@ ATTRIBUTION
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0rem 3.9rem;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
   }
 
   .hero-text {
@@ -463,8 +483,9 @@ ATTRIBUTION
 
   .hero-img {
     justify-self: end;
-    margin-bottom: 0;
-    grid-column: 2;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 3rem;
   }
 
   .fylo-photo {
@@ -510,11 +531,12 @@ ATTRIBUTION
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 0rem 2.5rem;
+    max-width: 100%;
   }
 
   .benefits-img {
     grid-column: 2;
-    justify-self: center;
+    justify-self: end;
   }
 
   .benefits-text {
@@ -538,7 +560,8 @@ ATTRIBUTION
 
   .bq-container {
     margin: 0;
-    max-width: 50%;
+    max-width: 49%;
+    margin-bottom: 1.5rem;
   }
 
   .avatar-text h2 {
@@ -592,6 +615,10 @@ ATTRIBUTION
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     padding-left: 3.9rem;
     padding-bottom: 3.9rem;
+  }
+
+  .footer-phone {
+    margin-top: 0.1rem;
   }
 
   .footer-phone > img {
