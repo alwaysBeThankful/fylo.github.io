@@ -60,18 +60,23 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
+
+          <form action="#">
           <div class="hero-btn">
-            <div class="hero-email">
-              <input
-                type="email"
-                placeholder="Enter your e-mail..."
-                required
-                class="fylo-email"
-              />
-            </div>
-            <div class="hero-button">
-              <button class="btn hero-cta" type="submit">Get Started</button>
-            </div>
+              <div class="hero-email">
+                <input
+                  type="email"
+                  placeholder="Enter your e-mail..."
+                  required
+                  class="fylo-email"
+                  id="email-submit"
+                  required
+                />
+              </div>
+              <div class="hero-button" id="email-submit">
+                <button class="btn hero-cta" type="submit">Get Started</button>
+              </div>
+            </form>
           </div>
         </div>
       </header>
@@ -147,18 +152,22 @@
             would be happy to help you.
           </p>
         </div>
-        <div class="form-section">
-          <div class="email-form email--cta">
-            <input
-              type="email"
-              placeholder="example@example.com"
-              class="fylo-email"
-            />
+        <form action="#">
+          <div class="form-section">
+            <div class="email-form email--cta">
+              <input
+                type="email"
+                placeholder="example@example.com"
+                class="fylo-email"
+                id="email-submit"
+                required
+              />
+            </div>
+            <div class="email-button email--cta" id="email-submit">
+              <button class="btn" type="submit">Get Started For Free</button>
+            </div>
           </div>
-          <div class="email-button email--cta">
-            <button class="btn" type="submit">Get Started For Free</button>
-          </div>
-        </div>
+        </form>
       </section>
 
       <!-- 

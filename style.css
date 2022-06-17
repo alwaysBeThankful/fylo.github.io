@@ -56,6 +56,11 @@ h2 {
   text-align: center;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(48, 101, 248, 0.8);
+}
+
 .fylo-email {
   display: inline-block;
   font-size: 0.8rem;
