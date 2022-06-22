@@ -29,7 +29,6 @@ p {
 }
 
 a {
-  color: var(--Desaturated-Blue);
   text-decoration: none;
 }
 
@@ -46,3 +45,32 @@ h2 {
 img {
   max-width: 100%;
 }
+
+/* ======
+HEADER
+====== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+header img {
+  max-width: 100px;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1rem;
+  color: var(--Desaturated-Blue);
+}
+
+/* ======
+MAIN
+====== */
+
+/* ======
+HERO
+====== */
