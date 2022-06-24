@@ -29,7 +29,6 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
-
     <header>
       <img src="./images/logo.svg" alt="Fylo" />
       <!-- 
@@ -54,7 +53,7 @@
         <img src="./images/illustration-1.svg" alt="" />
         <section class="hero-text">
           <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p> 
+          <p>
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
@@ -62,7 +61,9 @@
         </section>
         <div class="button-wrapper">
           <form screen-reader-only action="#">
-            <label for="hero-email"><span class="sr-only">Enter your e-mail</span></label>
+            <label for="hero-email"
+              ><span class="sr-only">Enter your e-mail</span></label
+            >
             <input
               type="email"
               id="hero-email"
@@ -78,15 +79,16 @@
         BENEFITS 
       -->
       <div class="benefits-wrapper">
-          <h2>Stay productive, wherever you are</h2>
-          <p>
-            Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.
-          </p>
-          <p>
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required!
-          </p>
+        <img src="./images/illustration-1.svg" alt="" />
+        <h3>Stay productive, wherever you are</h3>
+        <p>
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p>
+          Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required!
+        </p>
         <div class="benefits">
           <a href="#">See how Fylo works</a>
         </div>
@@ -103,7 +105,10 @@
             </blockquote>
             <div class="avatar">
               <img src="./images/avatar-testimonial.jpg" alt="Fylo CEO" />
-              <figcaption>Kyle Burton Founder & CEO, Huddle</figcaption>
+              <figcaption class="avatar-text">
+                <h3>Kyle Burton</h3>
+                <p>Founder & CEO, Huddle</p>
+              </figcaption>
             </div>
           </figure>
         </div>
@@ -112,15 +117,17 @@
       <!-- 
         EMAIL SIGNUP / CTA 
       -->
-      <div class="button-wrapper">
+      <div class="cta-wrapper">
         <form action="#">
           <h2>Get early access today</h2>
           <p>
             It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team would
-            be happy to help you.
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
           </p>
-          <label for="hero-email"><span class="sr-only">Enter your e-mail</span></label>
+          <label for="hero-email"
+            ><span class="sr-only">Enter your e-mail</span></label
+          >
           <input
             type="email"
             id="hero-email"
@@ -141,11 +148,11 @@
         -->
         <div class="footer-contact">
           <span class="footer-phone">
-            <img src="./images/icon-phone.svg" alt="">
-            <a href="#">Phone: +1-543-123-4567</a></img>
+            <img src="./images/icon-phone.svg" alt="" />
+            <a href="#">Phone: +1-543-123-4567</a>
           </span>
           <span class="footer-email">
-            <img src="./images/icon-email.svg" alt="">
+            <img src="./images/icon-email.svg" alt="" />
             <a href="#">example@fylo.com</a>
           </span>
         </div>
@@ -170,15 +177,35 @@
         -->
         <div class="social-media">
           <ol>
-            <li><a href="https://www.facebook.com/" aria-label="facebook" target="_blank" rel="noopener"
-            ><i class="fa-brands fa-facebook-f"></i
-            ></a></li>
-            <li><a href="https://twitter.com/?lang=en"  aria-label="twitter" target="_blank" rel="noopener">
-              <i class="fa-brands fa-twitter"></i
-            ></a></li>
-            <li><a href="https://www.instagram.com/"  aria-label="instagram" target="_blank" rel="noopener">
-              <i class="fa-brands fa-instagram"></i
-            ></a></li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/?lang=en"
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
           </ol>
         </div>
       </div>
