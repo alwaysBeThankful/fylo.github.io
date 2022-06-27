@@ -58,39 +58,44 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
+
+          <div class="button-wrapper">
+            <form screen-reader-only action="#">
+              <label for="hero-email"
+                ><span class="sr-only">Enter your e-mail</span></label
+              >
+              <input
+                type="email"
+                id="hero-email"
+                placeholder="Enter your e-mail..."
+                required
+              />
+              <button type="submit">Get Started</button>
+            </form>
+          </div>
         </section>
-        <div class="button-wrapper">
-          <form screen-reader-only action="#">
-            <label for="hero-email"
-              ><span class="sr-only">Enter your e-mail</span></label
-            >
-            <input
-              type="email"
-              id="hero-email"
-              placeholder="Enter your e-mail..."
-              required
-            />
-            <button type="submit">Get Started</button>
-          </form>
-        </div>
       </div>
 
       <!-- 
         BENEFITS 
       -->
       <div class="benefits-wrapper">
-        <img src="./images/illustration-1.svg" alt="" />
-        <h3>Stay productive, wherever you are</h3>
-        <p>
-          Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.
-        </p>
-        <p>
-          Securely share files and folders with friends, family and colleagues
-          for live collaboration. No email attachments required!
-        </p>
-        <div class="benefits">
-          <a href="#">See how Fylo works</a>
+        <div class="benefits-image">
+          <img src="./images/illustration-2.svg" alt="" />
+        </div>
+        <div class="benefits-info">
+          <h3>Stay productive, wherever you are</h3>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <div class="benefits">
+            <a href="#">See how Fylo works</a>
+          </div>
         </div>
 
         <!-- 
@@ -119,94 +124,105 @@
       -->
       <div class="cta-wrapper">
         <form action="#">
-          <h2>Get early access today</h2>
-          <p>
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-          <label for="hero-email"
-            ><span class="sr-only">Enter your e-mail</span></label
-          >
-          <input
-            type="email"
-            id="hero-email"
-            placeholder="email@example.com"
-            required
-          />
-          <button type="submit">Get Started For Free</button>
+          <div class="cta-text">
+            <h2>Get early access today</h2>
+            <p>
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div class="cta-btns">
+            <label for="hero-email"
+              ><span class="sr-only">Enter your e-mail</span></label
+            >
+            <input
+              type="email"
+              id="hero-email"
+              placeholder="email@example.com"
+              required
+            />
+            <button type="submit">Get Started For Free</button>
+          </div>
         </form>
       </div>
     </main>
 
     <footer>
-      <div class="footer-wrapper">
-        <img src="./images/logo-white.svg" alt="Fylo" />
+      <div class="footer-container">
+        <!-- <img src="./images/logo-white.svg" alt="Fylo" /> -->
+        <div class="footer-wrapper">
+          <!-- 
+            CONTACT 
+          -->
+          <div class="footer-contact">
+            <span class="footer-phone">
+              <img src="./images/icon-phone.svg" alt="" />
+              <a href="#">Phone: +1-543-123-4567</a>
+            </span>
+            <span class="footer-email">
+              <img src="./images/icon-email.svg" alt="" />
+              <a href="#">example@fylo.com</a>
+            </span>
+          </div>
 
-        <!-- 
-          CONTACT 
-        -->
-        <div class="footer-contact">
-          <span class="footer-phone">
-            <img src="./images/icon-phone.svg" alt="" />
-            <a href="#">Phone: +1-543-123-4567</a>
-          </span>
-          <span class="footer-email">
-            <img src="./images/icon-email.svg" alt="" />
-            <a href="#">example@fylo.com</a>
-          </span>
-        </div>
+          <!-- 
+            FOOTER NAVAGATION 
+          -->
+          <div class="nav-footer">
+            <nav aria-label="footer">
+              <ul>
+                <div class="faq-details">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Blog</a></li>
+                </div>
+                <div class="contact-details">
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </div>
+              </ul>
+            </nav>
+          </div>
 
-        <!-- 
-          FOOTER NAVAGATION 
-        -->
-        <nav aria-label="footer">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-          </ul>
-        </nav>
-
-        <!-- 
-          SOCIAL MEDIA
-        -->
-        <div class="social-media">
-          <ol>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                aria-label="facebook"
-                target="_blank"
-                rel="noopener"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/?lang=en"
-                aria-label="twitter"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                aria-label="instagram"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-          </ol>
+          <!-- 
+            SOCIAL MEDIA
+          -->
+          <div class="social-media">
+            <ol>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  aria-label="facebook"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/?lang=en"
+                  aria-label="twitter"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  aria-label="instagram"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </footer>
