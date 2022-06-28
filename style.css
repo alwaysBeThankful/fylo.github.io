@@ -367,10 +367,6 @@ footer ul li a {
   padding-bottom: 1rem;
 }
 
-.nav-footer ul li:nth-child(5) {
-  margin-top: 2rem;
-}
-
 /* ======
 SOCIAL MEDIA
 ====== */
@@ -450,7 +446,6 @@ SOCIAL MEDIA
   .footer-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding-bottom: 4rem;
   }
 
   .footer-wrapper {
@@ -478,6 +473,19 @@ SOCIAL MEDIA
     margin-top: -4rem;
   }
 
+  footer nav > ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 9rem;
+    gap: 0;
+  }
+
+  .nav-footer ul li:nth-child(5),
+  .nav-footer ul li:nth-child(6),
+  .nav-footer ul li:nth-child(7) {
+    margin-left: 8rem;
+  }
+
   .footer-contact img {
     max-width: 50%;
   }
@@ -489,17 +497,6 @@ SOCIAL MEDIA
   .nav-footer ul {
     margin-top: 0;
     flex-direction: column;
-  }
-
-  .nav-footer ul li:nth-child(5) {
-    margin-top: 0;
-  }
-
-  footer nav > ul {
-    display: flex;
-    flex-flow: column wrap;
-    height: 6rem;
-    gap: 0;
   }
 
   .faq-details li {
@@ -723,14 +720,16 @@ SOCIAL MEDIA
     flex-direction: column;
   }
 
-  .nav-footer ul li:nth-child(5) {
-    margin-top: 0;
+  .nav-footer ul li:nth-child(5),
+  .nav-footer ul li:nth-child(6),
+  .nav-footer ul li:nth-child(7) {
+    margin-left: 8rem;
   }
 
   footer nav > ul {
     display: flex;
     flex-flow: column wrap;
-    height: 6rem;
+    height: 9rem;
     gap: 0;
   }
 
