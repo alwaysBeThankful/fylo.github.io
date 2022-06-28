@@ -81,6 +81,7 @@ nav > ul {
 /* ======
 HERO
 ====== */
+
 .hero-wrapper {
   display: flex;
   flex-direction: column;
@@ -150,7 +151,7 @@ BENEFITS
   position: relative;
   background-color: var(--Light-Grayish-Blue);
   max-width: 1440px;
-  margin: 6.4rem auto 0;
+  margin: 9rem auto 0;
   padding: 1.5rem;
 }
 
@@ -242,8 +243,12 @@ blockquote {
 /* ======
 EMAIL / CTA
 ====== */
-.cta-wrapper {
+
+.cta-container {
   background-color: var(--Desaturated-Blue);
+}
+
+.cta-wrapper {
   color: #fff;
   padding: 3rem 2rem;
   max-width: 1440px;
@@ -307,6 +312,10 @@ footer {
   padding: 4rem 2rem 1rem;
 }
 
+.footer-phone {
+  margin-top: 5rem;
+}
+
 .footer-phone > a,
 .footer-email > a {
   color: #fff;
@@ -328,7 +337,22 @@ footer ul li a {
 }
 
 .footer-contact {
+  position: relative;
   gap: 1rem;
+}
+
+.footer-contact::before {
+  content: "";
+  background: url(./images/logo-white.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 43px;
+  bottom: 0;
+  right: 0;
+  left: 0px;
+  width: 11rem;
+  height: 3rem;
+  margin-top: -4rem;
 }
 
 .footer-contact img {
@@ -336,7 +360,11 @@ footer ul li a {
 }
 
 .nav-footer ul {
-  margin-top: 4em;
+  margin-top: 3rem;
+}
+
+.nav-footer ul li {
+  padding-bottom: 1rem;
 }
 
 .nav-footer ul li:nth-child(5) {
@@ -347,7 +375,7 @@ footer ul li a {
 SOCIAL MEDIA
 ====== */
 .social-media {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -374,7 +402,135 @@ SOCIAL MEDIA
   padding: 0.5rem;
 }
 
-@media (min-width: 1100px) {
+@media screen and (min-width: 854px) {
+  header > img {
+    max-width: 115px;
+  }
+
+  .hero-image img {
+    max-width: 60%;
+    text-align: center;
+  }
+
+  .hero-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .hero-wrapper p {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .button-wrapper input,
+  .button-wrapper button {
+    width: 76%;
+  }
+
+  .benefits-image {
+    max-width: 60%;
+    text-align: center;
+  }
+
+  .cta-text h2 {
+    font-size: 2rem;
+  }
+
+  .cta-text p {
+    width: 80%;
+    margin: 1.3rem auto;
+  }
+
+  /* ======
+  FOOTER
+  ====== */
+  footer {
+    padding: 5rem 2rem 1rem;
+  }
+
+  .footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .footer-contact {
+    position: static;
+  }
+
+  .footer-contact::before {
+    content: "";
+    background: url(./images/logo-white.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    left: 30px;
+    width: 11rem;
+    height: 3rem;
+    margin-top: -4rem;
+  }
+
+  .footer-contact img {
+    max-width: 50%;
+  }
+
+  .footer-phone {
+    margin-top: 0rem;
+  }
+
+  .nav-footer ul {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .nav-footer ul li:nth-child(5) {
+    margin-top: 0;
+  }
+
+  footer nav > ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 6rem;
+    gap: 0;
+  }
+
+  .faq-details li {
+    margin-top: 1rem;
+  }
+
+  .faq-details li:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 7rem;
+  }
+
+  .social-media {
+    margin-top: 0;
+  }
+
+  .social-media ol {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 1245px) {
   /* - HEADER - */
 
   /* ======
@@ -404,13 +560,18 @@ SOCIAL MEDIA
     padding: 0rem 4rem;
   }
 
+  .hero-wrapper p {
+    margin: 0;
+    width: 100%;
+  }
+
   .hero-wrapper img {
     max-width: 550px;
     margin-left: auto;
   }
 
   .hero-wrapper h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.6;
   }
 
@@ -441,10 +602,15 @@ SOCIAL MEDIA
   /* ======
   BENEFITS
   ====== */
+  .benefits-container {
+    background: var(--Light-Grayish-Blue);
+  }
+
   .benefits-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0rem 4rem;
+    margin: 12rem auto 0;
   }
 
   .benefits-image {
@@ -501,6 +667,7 @@ SOCIAL MEDIA
   .cta-text p {
     width: 62%;
     margin-top: 1rem;
+    margin-left: 0rem;
   }
 
   .cta-btns {
@@ -515,7 +682,7 @@ SOCIAL MEDIA
   ====== */
 
   footer {
-    padding: 5rem 2rem 1rem;
+    padding: 5rem 0rem 2rem;
   }
 
   .footer-container {
@@ -525,18 +692,17 @@ SOCIAL MEDIA
 
   .footer-wrapper {
     display: flex;
-    gap: 13rem;
+    gap: 14rem;
     margin-bottom: 2rem;
+    padding-left: 4rem;
   }
 
   .footer-contact::before {
-    content: "";
-    background: url(./images/logo-white.svg);
-    background-repeat: no-repeat;
-    /* position: absolute; */
-    width: 11rem;
-    height: 3rem;
-    margin-top: -4rem;
+    left: 63px;
+  }
+
+  .footer-contact {
+    position: static;
   }
 
   .footer-contact img {
@@ -571,7 +737,7 @@ SOCIAL MEDIA
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-left: 15rem;
+    margin-left: 12rem;
   }
   /* ======
   SOCIAL MEDIA
@@ -579,7 +745,7 @@ SOCIAL MEDIA
 
   .social-media {
     margin-top: 0;
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 
   .social-media ol {
